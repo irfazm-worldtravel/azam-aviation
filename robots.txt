@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://irfazm-worldtravel.github.io/azam-aviation/sitemap.xml
