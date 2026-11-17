@@ -1,17 +1,21 @@
-AZAM AVIATION PVT LTD — WEBSITE UPDATE
+AZAM AVIATION PVT LTD — MOBILE PERFORMANCE UPDATE
 
-This package includes the previously prepared combined Umrah & Hajj page and the latest Visit Visas presentation update.
+This package reduces the website's page weight by removing the same large embedded logo image from each page and using one small, reusable WebP logo file instead.
 
-Visa improvements:
-- Visit visa country cards initially show the flag, country name and destination image.
-- Click a country to expand the full visa and destination guide.
-- Existing country-specific requirements and supplied fees are retained.
-- Each country includes indicative flight routing from Lahore (LHE), main airport codes, popular city-to-city connections and a six-step processing overview.
-- WORK VISAS remains a separate tab.
+Files to upload to the ROOT of the GitHub repository (replace existing files):
+- index.html
+- airline-tickets.html
+- umrah-hajj.html
+- visas.html
 
-IMPORTANT: Flight routes are planning examples, not live schedules. Visa rules, eligibility, processing times and fees can change. Confirm all details with the relevant authority and airline before booking or applying. Some details not present in the supplied source information are explicitly marked as requiring confirmation. No visa approval is guaranteed.
+Also upload the assets folder, keeping this exact path:
+- assets/azam-logo.webp
 
-Upload all six HTML files to the root of your GitHub repository, replacing files with the same names:
-index.html, airline-tickets.html, umrah-hajj.html, umrah.html, hajj.html, visas.html
+IMPORTANT:
+- Do not upload the assets folder as a ZIP file. Extract the ZIP first and upload the four HTML files plus the assets folder.
+- Keep the existing umrah.html and hajj.html redirect files unchanged.
+- Keep the assets folder name and file path exactly as shown. The pages load the shared logo from assets/azam-logo.webp.
+- The existing visa details, country information, fees, non-refundable fee notice, and WORK VISAS section are retained in visas.html.
+- Destination and flag images on the visa page already use lazy loading so they load as visitors scroll.
 
-Keep the old umrah.html and hajj.html redirect files. They forward visitors to umrah-hajj.html.
+After uploading, wait for GitHub Pages to publish, then refresh the website on your phone. If an old logo or page remains cached, close the browser tab and reopen the link.
